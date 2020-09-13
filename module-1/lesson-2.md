@@ -68,12 +68,11 @@ The following video converts a small existing project to use modules, splitting 
 
 ---
 
-<!--
 ## Lesson Task
 
 There is a practice question in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js2-module1-lesson2).
 
-Attempt the answer before checking against the example answer in the [answer branch](https://github.com/NoroffFEU/lesson-task-js2-module1-lesson2/tree/answer) of the repo. -->
+Attempt the answer before checking against the example answer in the [answer branch](https://github.com/NoroffFEU/lesson-task-js2-module1-lesson2/tree/answer) of the repo.
 
 ---
 
