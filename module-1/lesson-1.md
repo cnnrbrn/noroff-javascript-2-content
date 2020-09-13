@@ -139,6 +139,12 @@ We can use a try/catch block to catch any errors when making an API call.
 
 Here is a way to fix CORS errors you may receive when using certain APIs.
 
+tldr: prepend `https://noroffcors.herokuapp.com/` to the API url, eg:
+
+```
+https://noroffcors.herokuapp.com/https://your.api-url.here
+```
+
 <iframe src="https://player.vimeo.com/video/450829010" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <a href="https://vimeo.com/450829010/7bcbfbcb51" target="_blank">View on Vimeo</a>
