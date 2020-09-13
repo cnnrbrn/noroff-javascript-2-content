@@ -40,5 +40,3 @@ Display a message if there are no items in the wishlist.
 
 -   Create a folder called `your-name-js2-ma1`, e.g. `mary-smith-js2-ma1`
 -   Add all your code to this folder, zip the folder and submit the zip file
--   Add, commit and push this file to your repo
--   Submit the repo link
