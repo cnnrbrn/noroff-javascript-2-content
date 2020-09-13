@@ -20,7 +20,7 @@ If the user enters `50`, only results with a price of 50 or less should be displ
 
 ## Level 2
 
-Add a button to each result.
+Add a button or icon to each result.
 
 Clicking on the button should add or remove the result from a `wishlist` array stored in localStorage.
 
