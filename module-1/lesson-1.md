@@ -147,11 +147,11 @@ Here is a way to fix CORS errors you may receive when using certain APIs.
 
 ---
 
-## Lesson Task
+<!-- ## Lesson Task
 
-There are practice questions in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js2-module1-lesson1).
+There is a practice question in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js2-module1-lesson1).
 
-Attempt the answers before checking them against the answers in the [answer branch](https://github.com/NoroffFEU/lesson-task-js2-module1-lesson1/tree/answer) of the repo.
+Attempt the answer before checking against the example answer in the [answer branch](https://github.com/NoroffFEU/lesson-task-js2-module1-lesson1/tree/answer) of the repo. -->
 
 ---
 
