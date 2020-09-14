@@ -52,11 +52,11 @@ The find method is similar to the filter method, though it only returns a single
 
 In the video below, the filter method is used to filter a static array of objects on a `keyup` event.
 
-<iframe src="https://player.vimeo.com/video/457199012" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/457404171" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-<a href="https://vimeo.com/457199012/f3e2f37cfe" target="_blank">View on Vimeo</a>
+<a href="https://vimeo.com/457404171/47b82295b4" target="_blank">View on Vimeo</a>
 
-<a href="https://github.com/NoroffFEU/import-export" target="_blank">Code from the video</a>
+<a href="https://github.com/NoroffFEU/filter-example" target="_blank">Code from the video</a>
 
 ---
 
