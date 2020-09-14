@@ -32,11 +32,11 @@ Because localStorage can only store string values, we'll use `JSON.stringify` an
 
 ---
 
-<!-- ## Lesson Task
+## Lesson Task
 
 There is a practice question in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js2-module1-lesson4).
 
-Attempt the answer before checking against the example answer in the [answer branch](https://github.com/NoroffFEU/lesson-task-js2-module1-lesson4/tree/answer) of the repo. -->
+Attempt the answer before checking against the example answer in the [answer branch](https://github.com/NoroffFEU/lesson-task-js2-module1-lesson4/tree/answer) of the repo.
 
 ---
 
