@@ -29,7 +29,7 @@ We can use `parseInt` to convert a string holding an integer value to a number a
 
 Function arguments are a very important concept in JavaScript and are how we pass values into functions.
 
-<iframe src="https://scrimba.com/c/crqy9NuP" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://scrimba.com/c/crqy9NuP" width="640" height="440" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <a href="https://scrimba.com/c/crqy9NuP" target="_blank">Scrimba link</a>
 
@@ -39,7 +39,7 @@ Function arguments are a very important concept in JavaScript and are how we pas
 
 While function arguments are how we send variable values into functions, the return statement inside a function is how we send values back out.
 
-<iframe src="https://scrimba.com/c/czLNwafP" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://scrimba.com/c/czLNwafP" width="640" height="440" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <a href="https://scrimba.com/c/czLNwafP" target="_blank">Scrimba link</a>
 
@@ -51,7 +51,7 @@ It is very common in JavaScript to pass functions as arguments to other function
 
 These are often called callback functions are executed within the receiving function.
 
-<iframe src="https://scrimba.com/c/cMgggbHG" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://scrimba.com/c/cMgggbHG" width="640" height="440" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <a href="https://scrimba.com/c/cMgggbHG" target="_blank">Scrimba link</a>
 
@@ -75,7 +75,7 @@ Here is an example of a function that can be used to produce HTML strings.
 
 `forEach` loops are similar to `for` loops but it's not possible to use the `break` or `continue` keywords in them.
 
-<iframe src="https://scrimba.com/c/cJggwKAN" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://scrimba.com/c/cJggwKAN" width="640" height="440" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <a href="https://scrimba.com/c/cJggwKAN" target="_blank">Scrimba link</a>
 
@@ -85,7 +85,7 @@ Here is an example of a function that can be used to produce HTML strings.
 
 Arrow functions are very common in JavaScript, especially popular when functions are being used as arguments.
 
-<iframe src="https://scrimba.com/c/cg29pns6" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://scrimba.com/c/cg29pns6" width="640" height="440" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <a href="https://scrimba.com/c/cg29pns6" target="_blank">Scrimba link</a>
 

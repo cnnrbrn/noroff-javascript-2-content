@@ -12,7 +12,7 @@ The filter method takes a function as an argument. This function receives each i
 
 The Scrimba below takes a look at using the filter method on an array of numbers.
 
-<iframe src="https://scrimba.com/c/cvwqVzT8" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://scrimba.com/c/cvwqVzT8" width="640" height="440" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <a href="https://scrimba.com/c/cvwqVzT8" target="_blank">Scrimba link</a>
 
@@ -22,7 +22,7 @@ The Scrimba below takes a look at using the filter method on an array of numbers
 
 The Scrimba below takes a look at using the filter method on an array of strings.
 
-<iframe src="https://scrimba.com/c/cpMKVPTa" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://scrimba.com/c/cpMKVPTa" width="640" height="440" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <a href="https://scrimba.com/c/cpMKVPTa" target="_blank">Scrimba link</a>
 
@@ -32,7 +32,7 @@ The Scrimba below takes a look at using the filter method on an array of strings
 
 The Scrimba below takes a look at using the filter method on an array of objects.
 
-<iframe src="https://scrimba.com/c/cwwvEJt9" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://scrimba.com/c/cwwvEJt9" width="640" height="440" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <a href="https://scrimba.com/c/cwwvEJt9" target="_blank">Scrimba link</a>
 
@@ -42,7 +42,7 @@ The Scrimba below takes a look at using the filter method on an array of objects
 
 The find method is similar to the filter method, though it only returns a single item (or undefined) rather than an array of items.
 
-<iframe src="https://scrimba.com/c/cVvLZLhp" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://scrimba.com/c/cVvLZLhp" width="640" height="440" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <a href="https://scrimba.com/c/cVvLZLhp" target="_blank">Scrimba link</a>
 
