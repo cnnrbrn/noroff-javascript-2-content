@@ -72,11 +72,11 @@ The video below builds on the one above, adding data from an API call and moving
 
 ---
 
-<!-- ## Lesson Task
+## Lesson Task
 
 There is a practice question in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js2-module1-lesson3).
 
-Attempt the answer before checking against the example answer in the [answer branch](https://github.com/NoroffFEU/lesson-task-js2-module1-lesson3/tree/answer) of the repo. -->
+Attempt the answer before checking against the example answer in the [answer branch](https://github.com/NoroffFEU/lesson-task-js2-module1-lesson3/tree/answer) of the repo.
 
 ---
 
