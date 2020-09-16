@@ -99,7 +99,7 @@ We can use this event to immediately respond to user input.
 
 <a href="https://vimeo.com/448275148/729cff210a" target="_blank">View on Vimeo</a>
 
-<a href="https://github.com/NoroffFEU/https://github.com/NoroffFEU/dom-events-onkeyup" target="_blank">Code from the video</a>
+<a href="https://github.com/NoroffFEU/dom-events-onkeyup" target="_blank">Code from the video</a>
 
 ---
 
