@@ -2,48 +2,93 @@
 
 In this lesson we will look at:
 
--   event bubbling
--   data attributes
--   adding event handlers in a loop
--   mouseover and mouesout events
--   scroll event
+-   A pratical use for an IIFE - immediately invoked function expression
+-   A practical use for classes
 
-## Event bubbling
+## IIFE
 
-Events "bubble up" through the DOM. This video explores what that means.
+An immediately invoked function expression is a function that is declared and then immediately called.
 
-<iframe src="https://player.vimeo.com/video/448069050" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+It has the following syntax.
 
+```js
+(function () {
+    // do something
+})();
+```
 
-<a href="https://github.com/NoroffFEU/event-bubbling" target="_blank">Code from the video</a>
+The video takes a look at a practical example.
 
-## Data attributes
+<iframe src="https://player.vimeo.com/video/459377797" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-Data attributes are a way to store information or values on DOM elements.
+<a href="https://vimeo.com/459377797/aad5ef3b9b" target="_blank">View on Vimeo</a>
 
-## Adding event handlers in a loop
+---
 
-The video below looks at data attributes and adding click event handlers to a variable amount of elements using a loop.
+## Classes
 
-<iframe src="https://scrimba.com/c/c36wvqh8" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Classes are declared with the `class` keyword.
 
-<a href="https://scrimba.com/c/ckwGdkCv" target="_blank">Scrimba link</a>
+```js
+class Block() {
 
-## mouseover and mouesout events
+}
+```
 
-The following video looks at the `mouseover` and `mouseout` events and an example of using them together with data attributes.
+Classes have a method - a function - called a `constructor` which is called each time an object is created with the `new` keyword.
 
-<iframe src="https://scrimba.com/c/cyw3zwu4" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+We can pass variables into classes in the constructor method and set properties inside the class with these values. This is called initialising a class.
 
-<a href="https://scrimba.com/c/cyw3zwu4" target="_blank">Scrimba link</a>
+```js
+class Block() {
+    constructor(label) {
+        this.label = label;
+    }
+}
+```
 
-## scroll event
+We can add our own methods to classes:
 
-Here we'll look at the `window.scroll` event using a practical example.
+```js
+class Block() {
+    constructor(label) {
+        this.label = label;
+    }
 
-<iframe src="https://player.vimeo.com/video/448306814" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    printLabel() {
+        console.log(this.label);
+    }
+}
+```
 
-<a href="https://github.com/NoroffFEU/scroll-event" target="_blank">Code from the video</a>
+We create a new object from a class using the `new` keyword and pass values in to the constructor.
+
+```js
+const myBlock = new Block("My label");
+```
+
+Once the object is created we can call the methods it contains:
+
+```js
+myBlock.printLabel();
+// "My label"
+```
+
+The following video contains a practical introduction to classes.
+
+<iframe src="https://player.vimeo.com/video/459504923" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<a href="https://vimeo.com/459504923/ca04e2d0e3" target="_blank">View on Vimeo</a>
+
+<a href="https://github.com/NoroffFEU/class-example" target="_blank">Code from the video</a>
+
+---
+
+## Activity
+
+### Read
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" target="_blank">The MDN reference on classes</a>
 
 ---
 

@@ -1,48 +1,30 @@
 # Module Assignment 2
 
-The HTML and JS file for this assignment can be found in <a href="https://github.com/NoroffFEU/ma-javascript1-module2" target="_blank">this repo</a>.
+## Brief
+
+Use the array of objects in this repo <a href="https://github.com/NoroffFEU/ma-javascript2-module2" target="_blank">this repo</a> for Level 1.
+
+Use modules (imports/exports) where you think they are appropriate.
 
 ## Level 1
 
-<h5 class="question">Question 1</h5>
+Loop through the array and create an HTML list from each item.
 
-Add a click event to the first `button` in the HTML file that changes the body background colour to green.
+Add a button or icon to each item that removes that particular item from the array.
 
-<h5 class="question">Question 2</h5>
+When there are no more items in the array display a message.
 
-Add a click event to the second `button` that toggles the class `extra` (adds it on the first click, removes it on the next) on the div with the class of `togglee`.
+## Level 2
 
-<h5 class="question">Question 3</h5>
+Create the list from an empty array that you use a text input and button to add new objects to. The objects can have the same structure as the array from level 1.
 
-Add a change event to the `select` element that adds an amount of paragraphs equal to the selected value to the div with a class of `paragraphs-container`. If you select 3, 3 paragraphs should be displayed. Each paragraph should have a class called `content`.
+Each item should have a button or icon that removes it from the array.
 
-<h5 class="question">Question 4</h5>
-
-Write code that displays the character count of the text input every time it changes. There is HTML you can use to display this value.
-
-<h5 class="question">Question 5</h5>
-
-Write code that adds the class `highlight` to the body when the page has scrolled at least 35px, and removes it when scrolled less than that.
+Save the list to and retrieve it from localStorage.
 
 ---
 
 ## Submission
 
--   Create a repository in your GitHub account called `your-name-js1-ma2`, e.g. mary-smith-js1-ma2, and **make sure it's public**
--   All your answers can go in `script.js`.
--   Place a comment above each answer indicating the question number:
-
-```js
-// question 1
-
-// your answer for question 1 goes here
-
-// question 2
-
-// your answer for question 2 goes here
-
-// etc
-```
-
--   Add, commit and push this file to your repo
--   Submit the repo link
+-   Create a folder called `your-name-js2-ma2`, e.g. `mary-smith-js2-ma2`
+-   Add all your code to this folder, zip the folder and submit the zip file

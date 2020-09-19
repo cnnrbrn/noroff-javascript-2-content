@@ -2,42 +2,58 @@
 
 In this lesson we will look at:
 
--   the length property and trim() method
--   the addEventListener function
--   the onkeyup event
--
+-   saving list state using object properties
+-   updating and saving array item text values
+-   clearing a list with a button
 
-## `length` property and `trim()` method.
+## Saving list state
 
-We can use the `length` property to count the number of characters in a string.
+In this video the items we work with in the array will be objects so that we can save the state of the array.
 
-The `trim()` method is used to remove the spaces at the beginning and end of strings.
+We will use a property in each object to mark an item as completed and save the array in localStorage.
 
-<iframe src="https://scrimba.com/c/cQRRVdTq" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+We'll use the `findIndex` method to determine with item to update.
 
-<a href="https://scrimba.com/c/cQRRVdTq" target="_blank">Scrimba link</a>
+<iframe src="https://player.vimeo.com/video/458283063" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-## addEventListener
+<a href="https://vimeo.com/458283063/5dbac4a082" target="_blank">View on Vimeo</a>
 
-The video below explains how to use the `addEventListener` method to add event listeners to elements.
+<a href="https://github.com/NoroffFEU/saving-list-state-in-localstorage" target="_blank">Code from the video</a>
 
-<iframe src="https://scrimba.com/c/ckwGdkCv" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+---
 
-<a href="https://scrimba.com/c/ckwGdkCv" target="_blank">Scrimba link</a>
+## Updating list item values
 
-## onkeyup event
+Here we will update and save the text value of each item in an array of objects.
 
-The following explores the `onkeyup` event by building a character counter for a message input.
+<iframe src="https://player.vimeo.com/video/458449710" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-<iframe src="https://player.vimeo.com/video/448275148" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<a href="https://vimeo.com/458449710/674a701a40" target="_blank">View on Vimeo</a>
 
-<a href="https://github.com/NoroffFEU/dom-events-onkeyup" target="_blank">Code from the video</a>
+<a href="https://github.com/NoroffFEU/saving-list-state-in-localstorage" target="_blank">Code from the video</a>
 
+---
+
+## Clearing a list
+
+In this video we'll add a button that clears all items in a list.
+
+We'll remove the array from localStorage and as well as the HTML created from the array.
+
+<iframe src="https://player.vimeo.com/video/458668966" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<a href="https://vimeo.com/458668966/b4dcc13922" target="_blank">View on Vimeo</a>
+
+<a href="https://github.com/NoroffFEU/update-and-store-item-values-in-a-list/tree/with-clear-button" target="_blank">Code from the video</a>
+
+---
+
+<!--
 ## Lesson Task
 
-There are practice questions in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js1-module2-lesson3).
+There are practice questions in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js2-module2-lesson3).
 
-Attempt the answers before checking them against the answers in the `script.js` file in the [answers branch](https://github.com/NoroffFEU/lesson-task-js1-module2-lesson3/tree/answers) of the repo.
+Attempt the answers before checking them against the answers in the `script.js` file in the [answers branch](https://github.com/NoroffFEU/lesson-task-js2-module2-lesson3/tree/answers) of the repo. -->
 
 ---
 

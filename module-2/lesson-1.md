@@ -1,76 +1,84 @@
 # Lesson 1
 
-In this lesson we will look at:
+In this lesson we will look at refresher videos on creating HTML from objects.
 
--   callback functions - passing functions into functions
--   forEach loops
--   the setTimeout method
--   the setInterval method
+After that we will:
 
-## Functions as arguments - passing functions into functions
+-   look at the push method on arrays
+-   creating HTML lists from dynamic arrays
 
-Often called `callbacks`, it is very common to pass functions as arguments to other functions and have the receiving function execute them.
+## Creating HTML from objects
 
-<iframe src="https://scrimba.com/c/cMgggbHG" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+The following three videos look at creating HTML from objects.
 
-<a href="https://scrimba.com/c/cMgggbHG" target="_blank">Scrimba link</a>
+If this is something you are comfortable with you can skip ahead to the array `push` method.
 
-## forEach loops
+### HTML from a single object
 
-The `forEach` loop is an alternative to the `for` loop.
+This video looks at creating HTML from a single objcet and adding default values for missing properties.
 
-When you use a `forEach` function, you will pass in a function to be executed by the `forEach` function for each item in the array you are looping over.
+<iframe src="https://player.vimeo.com/video/444562202" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-It does have some limitations though, such as the inability to use `break` or `continue`.
+<a href="https://vimeo.com/444562202/3290e75a25" target="_blank">View on Vimeo</a>
 
-<iframe src="https://scrimba.com/c/cJggwKAN" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<a href="https://github.com/NoroffFEU/creating-html-from-an-array-of-objects" target="_blank">Code from the video</a>
 
-<a href="https://scrimba.com/c/cJggwKAN" target="_blank">Scrimba link</a>
+## innerHTML on individual elements
 
-## setTimeout
+This video looks at setting the innerHTML property of individual DOM elements from a single object.
 
-The `setTimeout` method (function) is used to execute a function after a specified period of time.
+<iframe src="https://player.vimeo.com/video/444582197" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<a href="https://vimeo.com/444582197/4a27b67841" target="_blank">View on Vimeo</a>
 
-It has the following structure:
+<a href="https://github.com/NoroffFEU/creating-html-from-an-array-of-objects/tree/part-2" target="_blank">Code from the video</a>
 
-```js
-setTimeout(function () {
-    // do something
-}, 1000);
-```
+## HTML from an array of objects
 
-It has two required arguments:
+In this video HTML is created by looping through an array of objects.
 
-1. the function to be executed
-2. the delay - the delay in milliseconds before the function is executed
+<iframe src="https://player.vimeo.com/video/444696340" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-<iframe src="https://scrimba.com/c/cLgggqTQ" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<a href="https://vimeo.com/444696340/adfa854388" target="_blank">View on Vimeo</a>
 
-<a href="https://scrimba.com/c/cLgggqTQ" target="_blank">Scrimba link</a>
+<a href="https://github.com/NoroffFEU/creating-html-from-an-array-of-objects/tree/part-3" target="_blank">Code from the video</a>
 
-## setInterval
+## The array push method
 
-The `setInterval` method is similar to `setTimeout` but it executes a function at a certain interval until it is cleared.
-
-It has the following structure:
+The `push` method can be used to add an item to the end of an array.
 
 ```js
-setInterval(function () {
-    // do something
-}, 1000);
+const arr = [1, 2, 3];
+arr.push(4);
+
+console.log(arr);
+// [1, 2, 3, 4]
 ```
 
-<iframe src="https://scrimba.com/c/czLLpgfv" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/458910880" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-<a href="https://scrimba.com/c/czLLpgfv" target="_blank">Scrimba link</a>
+<a href="https://vimeo.com/458910880/8fd90c135d" target="_blank">View on Vimeo</a>
+
+<a href="https://github.com/NoroffFEU/array-push" target="_blank">Code from the video</a>
 
 ---
 
+## HTML lists from dynamic arrays
+
+In this video we will use a text input to add a new item to an array, and build an HTML list from the array.
+
+We will also add a click event listener to each item to mark it as completed with a CSS class.
+
+<iframe src="https://player.vimeo.com/video/457873601" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<a href="https://vimeo.com/457873601/0cf43afcc4" target="_blank">View on Vimeo</a>
+
+<a href="https://github.com/NoroffFEU/creating-a-list-from-an-array" target="_blank">Code from the video</a>
+
 ## Lesson Task
 
-There are practice questions in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js1-module2-lesson1).
+There are practice questions in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js2-module2-lesson1).
 
-Attempt the answers before checking them against the answers in the `script.js` file in the [answers branch](https://github.com/NoroffFEU/lesson-task-js1-module2-lesson1/tree/answers) of the repo.
+<!-- Attempt the answers before checking the [answer branch](https://github.com/NoroffFEU/lesson-task-js2-module2-lesson1/tree/answer) of the repo. -->
 
 ---
 
