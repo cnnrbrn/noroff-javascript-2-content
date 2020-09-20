@@ -11,7 +11,7 @@ In this lesson we will look at:
 
 The video below examines how to remove an item from an array using `filter`.
 
-<iframe src="https://player.vimeo.com/video/458063876" width="640" height="270" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/458063876" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <a href="https://vimeo.com/458063876/65936fd496" target="_blank">View on Vimeo</a>
 
@@ -25,7 +25,7 @@ Here we will see how to retrieve the index of an item in an array.
 
 This is useful when trying to update values of individual items in arrays.
 
-<iframe src="https://player.vimeo.com/video/458500936" width="640" height="270" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/458500936" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <a href="https://vimeo.com/458500936/895b451d84" target="_blank">View on Vimeo</a>
 
@@ -35,7 +35,7 @@ This is useful when trying to update values of individual items in arrays.
 
 In this video we'll add a delete button to each item in the list.
 
-<iframe src="https://player.vimeo.com/video/457925911" width="640" height="270" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/457925911" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <a href="https://vimeo.com/457925911/cb58b8db68" target="_blank">View on Vimeo</a>
 
