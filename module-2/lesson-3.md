@@ -48,11 +48,11 @@ We'll remove the array from localStorage and as well as the HTML created from th
 
 ---
 
-<!--
 ## Lesson Task
 
 There are practice questions in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js2-module2-lesson3).
 
+<!--
 Attempt the answers before checking them against the answers in the `script.js` file in the [answers branch](https://github.com/NoroffFEU/lesson-task-js2-module2-lesson3/tree/answers) of the repo. -->
 
 ---
