@@ -78,7 +78,7 @@ We will also add a click event listener to each item to mark it as completed wit
 
 There are practice questions in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js2-module2-lesson1).
 
-<!-- Attempt the answers before checking the [answer branch](https://github.com/NoroffFEU/lesson-task-js2-module2-lesson1/tree/answer) of the repo. -->
+Attempt the answer before checking the [answer branch](https://github.com/NoroffFEU/lesson-task-js2-module2-lesson1/tree/answer) of the repo.
 
 ---
 
