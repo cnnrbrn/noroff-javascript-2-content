@@ -92,6 +92,14 @@ The following video contains a practical introduction to classes.
 
 ---
 
+## Lesson Task
+
+There are practice questions in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js2-module2-lesson4).
+
+Attempt the answers before checking the [answer branch](https://github.com/NoroffFEU/lesson-task-js2-module2-lesson4/tree/answer) of the repo.
+
+---
+
 -   [Go to the module assignment](ma)
 
 ---
