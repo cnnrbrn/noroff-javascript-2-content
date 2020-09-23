@@ -30,7 +30,7 @@ Here we will update and save the text value of each item in an array of objects.
 
 <a href="https://vimeo.com/458449710/674a701a40" target="_blank">View on Vimeo</a>
 
-<a href="https://github.com/NoroffFEU/saving-list-state-in-localstorage" target="_blank">Code from the video</a>
+<a href="https://github.com/NoroffFEU/update-and-store-item-values-in-a-list" target="_blank">Code from the video</a>
 
 ---
 
