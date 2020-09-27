@@ -14,7 +14,7 @@ Named exports are exported with the `export` keyword and imported using their na
 
 One file can contain many named exports.
 
-You can alias a named export usign the `as` keyword.
+You can alias a named export using the `as` keyword.
 
 <img src="/images/imports-exports-2.png" style="max-width: 800px"/>
 

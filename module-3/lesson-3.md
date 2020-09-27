@@ -56,6 +56,12 @@ We'll again add the JWT to the header of this request.
 
 ---
 
+## Lesson Task
+
+There are practice questions in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js2-module3-lesson2).
+
+---
+
 -   [Go to lesson 4](4)
 
 ---

@@ -4,7 +4,7 @@ In this lesson we will look at:
 
 -   removing an item from an array using the `filter` method
 -   retrieving the index of an item in an array using the `findIndex` method
--   deleting indiviual items from a list built from an array
+-   deleting individual items from a list built from an array
 -   saving list arrays in localStorage
 
 ## Deleting items with filter

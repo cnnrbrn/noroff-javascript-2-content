@@ -17,7 +17,7 @@ In this lesson we'll look at `converting string values to number values` and the
 
 ## Converting strings to numbers
 
-We can use `parseInt` to convert a string holding an integer value to a number and `parseFloat` to convert a string holding a number with decimal place in it.
+We can use `parseInt` to convert a string holding an integer value to a number and `parseFloat` to convert a string holding a number with decimal places in it.
 
 <iframe src="https://player.vimeo.com/video/455951645" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 

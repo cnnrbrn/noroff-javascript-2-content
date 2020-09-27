@@ -2,7 +2,7 @@
 
 In this lesson we will look at:
 
--   A pratical use for an IIFE - immediately invoked function expression
+-   A practical use for an IIFE - immediately invoked function expression
 -   A practical use for classes
 
 ## IIFE

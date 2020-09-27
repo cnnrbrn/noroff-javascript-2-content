@@ -18,7 +18,7 @@ When the form is submitted, add simple validation that checks that there is at l
 
 If validation passes, make a request to your local Strapi API to login.
 
-If the login is successful, store the returned JWT in localStorage and redirect to another page. It doesn't matter what page you redirect to.
+If the login is successful, store the returned JWT in localStorage and redirect to another page. It doesn't matter which page you redirect to.
 
 If the login is not successful, display a message indicating that to the user.
 

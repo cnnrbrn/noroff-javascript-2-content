@@ -80,7 +80,7 @@ It is written in Node.js which means both our frontend and backend API will be w
 
 The video below provides a brief look at setting up a very simple REST API using Strapi.
 
-We will run it locally but there are a variety of hosting options to make an API you create with Strapi available publically.
+We will run it locally but there are a variety of hosting options to make an API you create with Strapi available publiclly.
 
 You can find the official docs on [their site](https://strapi.io/).
 
@@ -108,11 +108,11 @@ If you are comfortable doing this you can skip to the next section.
 
 The video below covers making GET requests to our local Strapi API from a frontend project.
 
-<iframe src="https://player.vimeo.com/video/453021027" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/461732700" width="640" height="270" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-<a href="https://vimeo.com/453021027/cc9e8cce3f" target="_blank">View on Vimeo</a>
+<a href="https://vimeo.com/461732700/54c6f85a6b" target="_blank">View on Vimeo</a>
 
-<a href="https://github.com/NoroffFEU/retrieving-parameters-from-querystrings" target="_blank">Code from the video</a>
+<a href="https://github.com/NoroffFEU/frontend-for-strapi-api" target="_blank">Code from the video</a>
 
 ---
 
@@ -125,6 +125,8 @@ The video below covers making GET requests to our local Strapi API from a fronte
 ---
 
 ## Lesson Task
+
+There are practice questions in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js2-module3-lesson1).
 
 ---
 

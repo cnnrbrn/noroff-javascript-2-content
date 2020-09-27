@@ -28,6 +28,7 @@ This video looks at creating HTML from a single objcet and adding default values
 This video looks at setting the innerHTML property of individual DOM elements from a single object.
 
 <iframe src="https://player.vimeo.com/video/444582197" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 <a href="https://vimeo.com/444582197/4a27b67841" target="_blank">View on Vimeo</a>
 
 <a href="https://github.com/NoroffFEU/creating-html-from-an-array-of-objects/tree/part-2" target="_blank">Code from the video</a>

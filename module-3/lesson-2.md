@@ -82,6 +82,12 @@ This can be used to display the username of the logged in user.
 
 ---
 
+## Lesson Task
+
+There are practice questions in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js2-module3-lesson2).
+
+---
+
 [Go to lesson 3](3)
 
 ---

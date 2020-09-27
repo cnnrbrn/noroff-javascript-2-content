@@ -57,6 +57,12 @@ Here we will see how we can view the data and headers sent in every API request 
 
 ---
 
+## Lesson Task
+
+There are practice questions in the master branch of [this repo](https://github.com/NoroffFEU/lesson-task-js2-module3-lesson4).
+
+---
+
 -   [Go to the module assignment](ma)
 
 ---
