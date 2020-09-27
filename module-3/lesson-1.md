@@ -108,7 +108,7 @@ If you are comfortable doing this you can skip to the next section.
 
 The video below covers making GET requests to our local Strapi API from a frontend project.
 
-<iframe src="https://player.vimeo.com/video/461732700" width="640" height="270" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/461732700" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <a href="https://vimeo.com/461732700/54c6f85a6b" target="_blank">View on Vimeo</a>
 
