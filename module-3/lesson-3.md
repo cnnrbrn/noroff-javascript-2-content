@@ -4,7 +4,7 @@ In this lesson we will look at:
 
 -   creating a dynamic menu
 -   creating a new resource in an API through a POST request
--   updaing a resource through a PUT request
+-   updating a resource through a PUT request
 
 We'll be adding a JSON web token to our POST and PUT requests as both require authentication.
 
