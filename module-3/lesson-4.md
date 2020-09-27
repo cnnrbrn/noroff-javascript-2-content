@@ -1,166 +1,62 @@
-# Lesson 4 
+# Lesson 4
 
 In this lesson we will take a look at:
 
-- fixing CORS errors
-- how to find free APIs to use
-- adding header values to API calls
+-   deleting resources through a DELETE request
+-   creating a button to logout from our site
+-   very basic route protection
+-   using Chrome's network tab to view API requests
 
-## CORS
+## Deleting resources
 
-CORS stands for `C`ross-`O`rigin `R`esource `S`haring.
+In this video we will add a delete button to the edit form and perform a DELETE request to remove a product.
 
-APIs that are not configured to accept requests from different origins, or domains, to their own will block the requests.
+<iframe src="https://player.vimeo.com/video/462188368" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-A lot of websites make calls to different APIs living on different servers, so we need a way around this.
+<a href="https://vimeo.com/462188368/613c09dd92" target="_blank">View on Vimeo</a>
 
-There are two ways to solve this issue:
-
-1. the API can be configured to allow cross-origin requests
-2. we can send the API calls through a proxy service
-
-Because we don't have control over how the API is configured unless we develop the API, option 2 is our only solution.
-
-The API found at [https://noroffcors.herokuapp.com/](https://noroffcors.herokuapp.com/) is a service we can use to enable cross-origin requests.
-
-To use it we simply have to prepend that URL to the URL of the API we want to use.
-
-The following API endpoint returns a list of elephants:
-
-```js
-https://elephant-api.herokuapp.com/elephants
-```
-
-If you called that URL with `fetch` like this
-
-```js
-const elephantUrl = "https://elephant-api.herokuapp.com/elephants";
-
-const response = await fetch(elephantUrl);
-const results = await response.json();
-```
-
-an error similar to this would be returned:
-
-```
-Access to fetch at 'https://elephant-api.herokuapp.com/elephants' from origin 'http://127.0.0.1:5501' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
-```
-
-To get around this, we can add the `cors-anywhere` URL to the beginning of the URL:
-
-```js
-const elephantUrl = "https://elephant-api.herokuapp.com/elephants";
-const corsEnabledUrl = "https://noroffcors.herokuapp.com/" + elephantUrl;
-
-const response = await fetch(corsEnabledUrl);
-const results = await response.json();
-```
-
-Now the API call will work.
-
-<iframe src="https://player.vimeo.com/video/450829010" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-<a href="https://github.com/NoroffFEU/get-request-with-cors-fix" target="_blank">Code from the video</a>
-
-
+<a href="https://github.com/NoroffFEU/frontend-for-strapi-api/tree/step-7-delete" target="_blank">Code from the video</a>
 
 ---
 
+## Logging out
 
-## Finding free APIs to use
+We don't have a way to log out of our site yet.
 
-The are many free APIs available to write frontend code against and a Google search for "free APIs" will return several lists of APIs you can use.
+In the following video we will add a button that will clear localStorage and redirect to the home page.
 
-One such list can be found at <a href="https://rapidapi.com/collection/list-of-free-apis" target="_blank">https://rapidapi.com/collection/list-of-free-apis</a>.
+<iframe src="https://player.vimeo.com/video/462198252" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-Log in with your Github account or create a new account. You can skip/close the screen that asks you for your name and organisation.
+<a href="https://vimeo.com/462198252/329f80a3e9" target="_blank">View on Vimeo</a>
 
-Many of the APIs, although free, still require keys to use. Logging in to the service will give you access to automatically created keys.
-
-<img src="/images/js1/rapid-api.png" alt="Rapid API" style="max-width:900px">
-
-We are going to scroll down and select `Urban Dictionary` from this free list, but you can browse by category or collection. Some require subscription but offer free limited subscriptions.
-
-On the Urban Dictionary page you can test the API endpoint. An API key has been created to use in the call.
-
-<img src="/images/js1/rapid-api-urban-dictionary.png" alt="Rapid API - Urban Dictionary" style="max-width:900px">
-
-From the dropdown menu select `JavaScript` -> `fetch`:
-
-<img src="/images/js1/rapid-api-dropdown.png" alt="Rapid API code select" style="max-width:700px">
-
-Click the Test Endpoint button to test the API. The results will be returned in the right panel in the Response Body section.
-
-<img src="/images/js1/rapid-api-response.png" alt="Rapid API response body" style="max-width:700px">
-
-The Code Snippet tab in the right panel has example code for the call that uses `fetch`.
-
-<img src="/images/js1/rapid-api-example-fetch.png" alt="Rapid API example fetch" style="max-width:700px">
-
-You can copy that code and use it in your script file or test it in the browser console. Note that the example code doesn't include the second `then` method which you will need to add.
-
-We can take that code and rewrite it using `async/await`.
-
-The extra object added to the fetch call contains the header property with the required API key values.
-
-```js
-async function callUrbanDictionary() {
-    const response = await fetch("https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=wat", {
-        headers: {
-            "x-rapidapi-host": "mashape-community-urban-dictionary.p.rapidapi.com",
-            "x-rapidapi-key": "your-key-here"
-        }
-    });
-
-    const json = await response.json();
-    console.log(json);
-}
-
-callUrbanDictionary();
-```
-
-## API call headers
-
-The second argument to a fetch call is an object we can use to set options, like header properties. We are setting two header properties, `x-rapidapi-host` and `x-rapidapi-key`.
-
-Header properties sent by API calls executed in the browser can be viewed in the Network tab in dev tools. Filter by XHR, click on a call URL and look in the Request Headers section:
-
-<img src="/images/js1/request-headers.png" alt="Request headers" style="max-width:900px">
-
-We can move the options object to a variable to make the code more readable:
-
-```js
-const options = {
-    headers: {
-        "x-rapidapi-host": "mashape-community-urban-dictionary.p.rapidapi.com",
-        "x-rapidapi-key": "your-key-here"
-    }
-};
-
-async function callUrbanDictionary() {
-    const response = await fetch("https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=wat", options);
-    const json = await response.json();
-    console.log(json);
-}
-
-callUrbanDictionary();
-```
-
-The header properties you set, for APIs that require them, will vary between APIs. 
+<a href="https://github.com/NoroffFEU/frontend-for-strapi-api/tree/step-8-logout-button" target="_blank">Code from the video</a>
 
 ---
 
-### Free API lists
+## Route protection
 
--   <a href="https://apilist.fun/" target="_blank">https://apilist.fun/</a>
--   <a href="https://rapidapi.com/collection/list-of-free-apis" target="_blank">https://rapidapi.com/collection/list-of-free-apis</a>
--   <a href="https://github.com/public-apis/public-apis" target="_blank">https://github.com/public-apis/public-apis</a>
+At the moment we can navigate directly to the add and edit pages even when logged out.
 
+In this video we will add a simple check to see if the JWT exists in localStorage. If not, we'll redirect to the home page.
+
+<iframe src="https://player.vimeo.com/video/462205711" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<a href="https://vimeo.com/462205711/6af7f4224e" target="_blank">View on Vimeo</a>
+
+<a href="https://github.com/NoroffFEU/frontend-for-strapi-api/tree/step-9-protected-routes" target="_blank">Code from the video</a>
 
 ---
 
-> For the CA you will be required to find your own API to use
+## Chrome's network tab
+
+Here we will see how we can view the data and headers sent in every API request using the XHR filter in Chrome's network tab in the dev tools.
+
+<iframe src="https://player.vimeo.com/video/462211730" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<a href="https://vimeo.com/462211730/5c47d60e34" target="_blank">View on Vimeo</a>
 
 ---
-- [Go to the module assignment](ma) 
+
+-   [Go to the module assignment](ma)
+
 ---

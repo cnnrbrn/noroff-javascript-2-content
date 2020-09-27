@@ -1,45 +1,32 @@
 # Module Assignment 3
 
+## Brief
+
+You will need to create a local Strapi instance for this assignment.
+
+The focus is on the JavaScript code in this assignment, but as a frontend developer the user interfaces you develop should always be presentable and make sense.
+
+You can use any UI library like Bootstrap for the assignment or use simple CSS styles.
+
+Use modules where appropriate.
+
 ## Level 1
 
-<h5 class="question">Question 1</h5>
+Create a login form that accepts a username and password.
 
-Convert the function below to an arrow function:
+When the form is submitted, add simple validation that checks that there is at least a value in each input.
 
-```js
-function division(a, b) {
-    return a % b;
-}
-```
+If validation passes, make a request to your local Strapi API to login.
 
-<h5 class="question">Question 2</h5>
+If the login is successful, store the returned JWT in localStorage and redirect to another page. It doesn't matter what page you redirect to.
 
-Make a call to the following API endpoint:
-
-```
-https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating
-```
-
-Loop through the results and display the following properties in HTML, but only for the first 8 results:
-
--   name
--   rating
--   number of tags (not the tag details, just the amount of tags)
-
-The styling for this assignment is not important, but some kind of loading indicator should be displayed while the API call is in progress.
-
-Be sure to handle any potential errors in the code.
-
-You can use either regular promise or async/await syntax to make the call.
-
-Be sure to arrange all file types appropriately, consult the repos from the lessons for examples.
+If the login is not successful, display a message indicating that to the user.
 
 ---
 
 ## Submission
 
--   Create a repository in your GitHub account called `js1-ma3` and **make sure it's public**
--   Add your answer for question 1 in a file called `question-1.js`
--   Add your answer for question 2 in a file called `question-2.js`
--   Add, commit and push your files - both `.js` files and any `.html` and `.css` files you may create - to this repo
--   Submit the repo link
+Submit only the frontend files. Don't submit your Strapi files.
+
+-   Create a folder called `your-name-js2-ma3`, e.g. `mary-smith-js2-ma3`
+-   Add all your code to this folder, zip the folder and submit the zip file

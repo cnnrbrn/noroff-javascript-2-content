@@ -1,58 +1,84 @@
 # Lesson 2
 
-In this lesson we will take a look at:
+In this lesson we will look at:
 
-- default parameters values in functions
-- creating dynamic HTML inside a function based on arguments
-- handling errors with a `try-catch-finally` statement
+-   JSON Web Tokens
+-   a refresher on event.preventDefault()
+-   a refresher on simple form validation
+-   building a form that we'll use to log in to our API
+-   storing the data sent back after a successful login in localStorage
 
-## Default parameter values
+## JSON web tokens (JWT)
 
-To provide default values for parameters we assigning in the function parameter list, e.g.
+Some API requests need to be authorised, we can't let the general public create or delete resources in our API, for example. We need a way to ensure a user is authorised to make the request.
 
-```js
-function printMessage(message = "No message provided") {
-    // do something
-}
-```
+One way to do this is to use JSON Web Tokens (JWT).
 
-If we call `printMessage()` and don't pass in an argument to the `message` parameter, message will have the default value of `"No message provided"`.
+When a user logs in with valid credentials (valid username and password), a token is sent back to the client.
 
-<iframe src="https://scrimba.com/c/cB3qn6u7" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+We can store this token and add it to the header of future requests that require authentication.
 
-<a href="https://scrimba.com/c/cB3qn6u7" target="_blank">Scrimba link</a>
+<img src="/images/jwt.png" style="max-width: 600px"/>
 
----
+In this video we will use a POST request in <a href="https://www.postman.com/downloads/" target="_blank">Postman</a> to log in to our API and receive a JWT in return.
 
-## Creating a reusable function that returns dynamic HTML
+<iframe src="https://player.vimeo.com/video/461747650" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-In this video we look at passing arguments to a function that will return different HTML based on what we pass in.
-
-We might call this function a `component`. It will return a limited amount of HTML that we can use elsewhere in our code.
-
-<iframe src="https://player.vimeo.com/video/450469640" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-<a href="https://github.com/NoroffFEU/reusable-html-function" target="_blank">Code from the video</a>
+<a href="https://vimeo.com/461747650/b68578534d" target="_blank">View on Vimeo</a>
 
 ---
 
-## Handling errors with a `try-catch-finally` statement
+## event.preventDefault()
 
-In the following video we look at how to use the `try-catch-finally` statement to catch errors and provide feedback to the user, rather than simply logging an error to the console that the user will never see.
+The default behaviour of a form submission will reload the page and so deny the rest of our code from executing.
 
-<iframe src="https://player.vimeo.com/video/450419821" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+The event.preventDefault() method stops that behaviour.
 
-<a href="https://github.com/NoroffFEU/try-catch-finally" target="_blank">Code from the video</a>
+<iframe src="https://player.vimeo.com/video/453361604" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<a href="https://vimeo.com/453361604/765aa36966" target="_blank">View on Vimeo</a>
+
+<a href="https://github.com/NoroffFEU/submit-event-preventDefault" target="_blank">Code from the video</a>
 
 ---
 
-## Adding error handling to an API call
+## Simple form validation
 
-In this video we will add error handling to our API call with a `try-catch` statement.
+If you are comfortable with performing simple validation on forms, skip to the next section.
 
-<iframe src="https://player.vimeo.com/video/450417105" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/453789618" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-<a href="https://github.com/NoroffFEU/get-requests-handling-errors" target="_blank">Code from the video</a>
+<a href="https://vimeo.com/453789618/501a1e3296" target="_blank">View on Vimeo</a>
+
+<a href="https://github.com/NoroffFEU/simple-form-validation" target="_blank">Code from the video</a>
+
+---
+
+## Building a login form
+
+Now we'll add a login form to our site that make the same POST request we did with Postman, this time using JavaScript.
+
+<iframe src="https://player.vimeo.com/video/461852859" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<a href="https://vimeo.com/461852859/f139d77049" target="_blank">View on Vimeo</a>
+
+<a href="https://github.com/NoroffFEU/frontend-for-strapi-api/tree/step-2-login" target="_blank">Code from the video</a>
+
+---
+
+## Saving logged in data
+
+In this video we'll save the JSON web token in localStorage so that we can make use of it in future API calls that require authentication.
+
+We'll also store the user object that is returned after logging in.
+
+This can be used to display the username of the logged in user.
+
+<iframe src="https://player.vimeo.com/video/461926363" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<a href="https://vimeo.com/461926363/85121e9911" target="_blank">View on Vimeo</a>
+
+<a href="https://github.com/NoroffFEU/frontend-for-strapi-api/tree/step-3-saving-login-data-in-localstorage" target="_blank">Code from the video</a>
 
 ---
 

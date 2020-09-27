@@ -1,90 +1,130 @@
 # Lesson 1
 
-In this lesson we will take a look at:
+In this lesson we will look at:
 
--   truthy and falsy values
--   querystrings
--   GET requests
+-   the ternary operator
+-   object destructuring
+-   a brief overview of APIs
+-   HTTP request methods
+-   creating a custom API with Strapi
+-   a refresher on retrieving parameters from the querystring
+-   making GET requests to our local Strapi API
 
-## Truthy and falsy values
+## The ternary operator
 
-Each value in JavaScript has a `boolean` value associated with it, known as `truthy` or `falsy`.
+The ternary operator is a frequently used shorthand way to write an if/else statement.
 
-The following values are `falsy`:
+<iframe src="https://player.vimeo.com/video/460600855" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
--   false
--   0 - the number zero
--   "", '' or `` - empty strings
--   null
--   undefined
--   Nan - `N`ot `a` `N`umber
+<a href="https://vimeo.com/460600855/ee87b47060" target="_blank">View on Vimeo</a>
 
-Every other value is `truthy`.
-
-If we are trying to check if a value exists, if it isn't `null` or `undefined`, for example, we can do this:
-
-```js
-if (someVariable) {
-    console.log("someVariable exists");
-}
-```
-
-rather than having to check for both `null` and `undefined` like this:
-
-```js
-if (someValue !== null && someValue !== undefined) {
-    console.log("someValue exists");
-}
-```
-
-That applies to all the falsy values, so we can check that a variable's value is not one of the `falsy` values by writing an `if statement` like the one above and below:
-
-```js
-if (someVariable) {
-    // someVariable has a truthy value
-}
-```
-
-<iframe src="https://scrimba.com/c/c7qJwDS4" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-<a href="https://scrimba.com/c/c7qJwDS4" target="_blank">Scrimba link</a>
+<a href="https://github.com/NoroffFEU/ternary-operator-example" target="_blank">Code from the video</a>
 
 ---
 
-## Querystrings
+## Object destructuring
 
-The querystring is the part of the URL after the `?`. It can be used to pass values around.
+Object destructuring is a way to retrieve properties from objects.
 
-In the URL
+<iframe src="https://player.vimeo.com/video/460712855" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-```
-https://youtube.com/watch?v=abcd1234
-```
-
-`?v=abcd1234` is the querystring. It has one parameter called `v` with a value of `abcd1234`.
-
-<iframe src="https://player.vimeo.com/video/449681615" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<a href="https://vimeo.com/460712855/91150dade5" target="_blank">View on Vimeo</a>
 
 ---
 
-## Introduction to GET requests
+## What is an API?
 
-One of the main things you will need to do as a frontend developer is to connect to APIs.
+An Application Programming Interface, in our case, is a layer of backend code written in a server-side language or framework like Node.js, .NET, Python, PHP, Java (not to be confused with JavaScript), etc that we call from our website or app.
 
-In this introduction to GET requests we are going make a first call to fetch data from an API.
+The API provides the functionality for a site or app and is almost always backed by some kind of data store that maintains the data for the site or app. The data store could be a SQL database like MySQL or PostgreSQL, a NoSQL document-store like MongoDB or a simple file-system DB like SQLite.
 
-This data will be in JSON format, and we can loop over it to create HTML like we have before with arrays of objects.
+The two primary types of APIs are REST (which is the kind we are working with) and GraphQL.
 
- <iframe src="https://player.vimeo.com/video/449846877" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<img src="/images/api.png" style="max-width: 700px"/>
+
+## HTTP request methods
+
+REST APIs use HTTP request methods as a way of interacting with the API.
+
+You will be familiar with `GET` request methods as these are the methods used to fetch data from APIs.
+
+There are several other methods, sometimes called HTTP verbs. We will explore the following methods:
+
+### POST
+
+This is used to send data, or "entities", to the server.
+
+It is a method commonly used to perform login actions or to create a new resource like, for example, a new product.
+
+### PUT
+
+This method is used to replace all data for a specific resource.
+
+It could be used, for example, to update all the values for a product.
+
+It is similar to the PATCH method which only updates some of the values in an entity.
+
+### DELETE
+
+This is used to delete an existing resource.
 
 ---
 
-The following video takes another look at the same code.
+## Strapi
 
-<iframe src="https://player.vimeo.com/video/450070174" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+Strapi is an open-source `headless` CMS.
 
-<a href="https://github.com/NoroffFEU/get-requests-introduction" target="_blank">Code from both videos</a>
+This means it provides an admin panel to create our own APIs that we can call from our frontends.
 
+It is written in Node.js which means both our frontend and backend API will be written in JavaScript.
+
+The video below provides a brief look at setting up a very simple REST API using Strapi.
+
+We will run it locally but there are a variety of hosting options to make an API you create with Strapi available publically.
+
+You can find the official docs on [their site](https://strapi.io/).
+
+<iframe src="https://player.vimeo.com/video/461538074" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<a href="https://vimeo.com/461538074/2698aaa310" target="_blank">View on Vimeo</a>
+
+---
+
+## Retrieving querystring parameters
+
+This video goes over getting values out of the querystring.
+
+If you are comfortable doing this you can skip to the next section.
+
+<iframe src="https://player.vimeo.com/video/453021027" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<a href="https://vimeo.com/453021027/cc9e8cce3f" target="_blank">View on Vimeo</a>
+
+<a href="https://github.com/NoroffFEU/retrieving-parameters-from-querystrings" target="_blank">Code from the video</a>
+
+---
+
+## Strapi GET requests
+
+The video below covers making GET requests to our local Strapi API from a frontend project.
+
+<iframe src="https://player.vimeo.com/video/453021027" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<a href="https://vimeo.com/453021027/cc9e8cce3f" target="_blank">View on Vimeo</a>
+
+<a href="https://github.com/NoroffFEU/retrieving-parameters-from-querystrings" target="_blank">Code from the video</a>
+
+---
+
+## Activity
+
+### Read
+
+[An overview of HTTP](https://wiki.developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+
+---
+
+## Lesson Task
 
 ---
 

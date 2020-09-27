@@ -1,143 +1,61 @@
 # Lesson 3
 
-In this lesson we will take a look at:
+In this lesson we will look at:
 
-- arrow functions
-- making API calls with the `then` and `catch` methods - regular promise syntax
+-   creating a dynamic menu
+-   creating a new resource in an API through a POST request
+-   updaing a resource through a PUT request
 
-## Arrow functions
+We'll be adding a JSON web token to our POST and PUT requests as both require authentication.
 
-Arrow functions don't use the `function` keyword and use the `=>` characters instead, hence their name.
+## Creating a dynamic menu
 
-We can rewrite the following function:
+Our site doesn't have any navigation yet.
 
-```js
-function logMessage(message) {
-    console.log(message);
-}
-```
+In this video we will add a menu that will add an active class to the current menu item using the location object, and change the HTML it displays depending on whether the user is logged in or not.
 
-like this:
+<iframe src="https://player.vimeo.com/video/461959625" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-```js
-const logMessage = (message) =>  console.log(message);
-```
+<a href="https://vimeo.com/461959625/878b8d9467" target="_blank">View on Vimeo</a>
 
-<iframe src="https://scrimba.com/c/cg29pns6" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-<a href="https://scrimba.com/c/cg29pns6" target="_blank">Scrimba link</a>
-
-
-## Asynchronous code
-
-In the GET request API call we used the `async` and `await` keywords to make the call.
-
-That was an example of <b>asynchronous code</b>.
-
-Previously the code we wrote had been executed or returned a value as soon as it was encountered in the program, apart from in the `setTimeout` method where we deliberately delay the execution.
-
-Async/await is a recent(ish) addition to JavaScript that allows us to work with promises in a more readable fashion, but we need to also look at using promises in the regular way as you will encounter this syntax in other people's code.
+<a href="https://github.com/NoroffFEU/frontend-for-strapi-api/tree/step-4-dynamic-menu" target="_blank">Code from the video</a>
 
 ---
 
-If you log a message
+## Creating new resources
 
-```js
-console.log("I am the first log");
-```
+Here we'll create a form that will send a POST request to our API to create a new product.
 
-the message is displayed as soon as the code is run.
+As this request requires authentication, we will retrieve the JWT from localStorage and add it to the Authorization key in the header of our request.
 
-If you declare a function
+First we'll look at how to make the POST request using Postman
 
-```js
-function logMessage() {
-    console.log("Function called");
-}
-```
+<iframe src="https://player.vimeo.com/video/462113012" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-the function is run as soon as it's called:
+<a href="https://vimeo.com/462113012/d9bbaf17f9" target="_blank">View on Vimeo</a>
 
-```js
-logMessage();
-// Function called
-```
-
-The following will be executed after the function has been called.
-
-```js
-console.log("I am the second log");
-```
-
-Running all the statements above will log:
-
-```js
-// I am the first log
-// Function called
-// I am the second log
-```
-
-The code is called statement by statement and each statement waits for the previous one to finish before running. This is called `synchronous` code.
-
-<img src="/images/js1/synchronous-code.png" alt="synchronous code" style="max-width:500px">
-
-That seems quite obvious, but sometimes it's not a good idea to wait for the previous statement to finish before executing the next one.
-
-If we made a call to a server and the user's internet connection was slow or the server was busy, waiting for the call to return before running the next code would create a poor user experience as the interface would appear unresponsive.
-
-`Asynchronous` code doesn't wait for the current statement to finish running before executing the next statement.
-
-## Promises
-
-`Promises` are a way to execute code `asynchronously`. When we call a promise our code doesn’t wait for a response, but moves on to the next line of code.
-
-<img src="/images/js1/promise-1.png" alt="promise" style="max-width:500px">
-
-<!-- They are objects we can use to handle the successful completion or failure of code that will finish running some time in the future. -->
-
-Once executed, the promise is `pending`. At some point it will return and will either have been `fulfilled` or `rejected`.
-
-<img src="/images/js1/promise-2.png" alt="promise" style="max-width:550px">
-
-<!-- 
-When we execute asynchronous code we can use a `Promise` to run a function when the code is successful and returns a value, or when the code is not successful and returns an error. -->
-
-Form [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise):
-
-> A Promise is in one of these states::
->
-> - `pending`: initial state, neither fulfilled nor rejected.
-> - `fulfilled`: meaning that the operation completed successfully.
-> - `rejected`: meaning that the operation failed.
-
-### Promise chaining
-
-Sometimes what is executed in our fulfilled function also returns a promise. This is called promise chaining.
-
-<img src="/images/js1/promise-chaining.png" alt="promise chaining" style="max-width:550px">
-
-`Fulfilled` states are handled by a `Promise`'s `then` method and `rejected` states are handled by a `catch` method.
-
-Both these methods take a function as an argument. This is where we can write code to handle the return value of the promise. 
-
-These functions in turn recieve an argument which is the return value of the promise (if successful and the promise has resolved) or the error from a rejected promise.
-
-<img src="/images/js1/promise-3.png" alt="promise" style="max-width:550px">
-
---- 
-
-Most of the time you won't write your own promises but will rather use libraries and other existing code built on promises.
-
-
-## then/catch example
-
-In this video we will rewrite the `async/await` API call to use regular promise syntax.
-
-
-<iframe src="https://player.vimeo.com/video/450776515" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-<a href="https://github.com/NoroffFEU/get-request-with-regular-promise-syntax" target="_blank">Code from the video</a>
+<a href="https://github.com/NoroffFEU/frontend-for-strapi-api/tree/step-5-post-request-form" target="_blank">Code from the video</a>
 
 ---
-- [Go to lesson 4](4) 
+
+## Updating resources
+
+In the following we'll use a form to update a product via PUT request from a form.
+
+In our script we will first retrieve the product details via a GET request, and populate our form with those details.
+
+We'll store the product ID in a hidden field in our form as we need the ID to make the PUT request.
+
+We'll again add the JWT to the header of this request.
+
+<iframe src="https://player.vimeo.com/video/462164343" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<a href="https://vimeo.com/462164343/1060593015" target="_blank">View on Vimeo</a>
+
+<a href="https://github.com/NoroffFEU/frontend-for-strapi-api/tree/step-6-put-request-form" target="_blank">Code from the video</a>
+
+---
+
+-   [Go to lesson 4](4)
+
 ---
