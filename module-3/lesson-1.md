@@ -84,6 +84,10 @@ We will run it locally but there are a variety of hosting options to make an API
 
 You can find the official docs on [their site](https://strapi.io/).
 
+The `scripts` section of `package.json` will contain all the commands you can run.
+
+To run Strapi in development mode run `npm run develop`.
+
 <iframe src="https://player.vimeo.com/video/461538074" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <a href="https://vimeo.com/461538074/2698aaa310" target="_blank">View on Vimeo</a>
