@@ -1,103 +1,65 @@
-# JavaScript 1 Course Assignment
+# JavaScript 2 Course Assignment
 
-Level 1 is required.
+## Brief
 
-Level 2 is optional.
+Create an API with Strapi or find an existing external API.
+
+It doesn’t matter what kind of data this API serves, but if you create a content type in Strapi, for example, it should have at least 3 custom properties.
+
+For instance, if you create a `Team` content type, each team might have a `name`, `nickname` and `yearEstablished` property.
+
+You can also build your own API in any other technology as long as it is publicly hosted.
 
 Choosing appropriate variable and function names will form part of your assessment, as will proper and consistent formatting of your code.
 
----
+Level 1 is required.
 
-## Instructions
+Level 2 and Level 3 are optional.
 
-### Find an API
+## Level 1 Process
 
-Search for a public, free-to-use API.
+Build a frontend for your API and add the following:
 
-You will need to make two calls to this API:
+### Home page
 
-1. to fetch an array of results
-2. to fetch a single result using an id, name or other property.
+-   Make a GET request to fetch a list of resources from your API
+-   Create HTML for each item and display at least 3 properties for each
+-   Each item should also display a button or icon. Clicking on this button should toggle the item in and out of an array stored in localStorage
+-   There should be a text input on this page that filters the array of results on one of the properties
 
-You will need to read the API's documentation to see what URLs are available, if they require a key to be sent in the header, and any other configuration they might need.
+### Favourites page
 
-There are many free APIs discoverable by a google search.
+-   This page should fetch the array of items stored in localStorage and display them or display a message that there are no items.
+-   There should be a "Clear all" button that clears localStorage (or just a specific key in localStorage) and reloads the display. Don’t reload the page, just redraw the HTML.
 
-### APIs you may not use
+## Level 2 Process
 
-You may not use the APIs used in the lessons and you may not use the Rick and Morty API found at https://rickandmortyapi.com/.
+Add a login form to your frontend that will allow a logged in admin user to perform the following tasks
 
----
+-   Adding new resources to the API
+-   Updating resources through an edit form
+-   Deleting resources
 
-The focus of the CA is on JavaScript, not styling, but as a frontend developer you will always need to produce user interfaces that make sense and are easy to follow. You will need to provide some kind of navigation to and from the home page (index.html) and the contact page.
+## Level 3 Process
 
-Both API calls should include some kind of loading indicator.
+Add a registration form to your site and allow new users to register. These new users should not have the same permissions as the admin user from Level 2.
 
-## Level 1
+When a logged in user adds or removes an item from the favourites array, save the state of the array on the server via an API call.
 
-### `index.html`
-
-Make a call to your API URL, loop through the results and create HTML for each result. 
-
-You must display <b>at least 3 different properties</b> inside the HTML. It's not required to display an image.
-
-You will need to link each result to a `details.html` page and to pass a parameter in the querystring to that page.
-
-If you are going to fetch the invididual result on the details page by its `id`, then pass an `id` in the querysting:
-
-If you will be retrieving by another property, like `name` for example, pass the `name` in the querystring.
-
-You will fetch this parameter from the querystring in the details page code.
-
-Catch any errors and display a message on the page if an error occurs.
-
----
-
-### `details.html`
-
-(Remember you will need a parameter in the querystring on this page, so either click through to it from the index page or manually add a parameter to the URL).
-
-Retrieve the `id`, `name` or other parameter from the query string.
-
-Once you have the parameter, add it to the API URL in the format the API requires.
-
-> For example, in the RAWG API from the lessons, the `id` of the the game to retrieve was added to the `games` url: `https://api.rawg.io/api/games/1234`
-
-Make an API call using the URL you create.
-
-Display <b>at least 3 different properties</b> from the received JSON on this page.
-
-Set the title of the HTML page to be one of the property values, like `name`,`title` or another relevant property.
-
-Catch any errors and display a message on the page if an error occurs.
-
----
-
-### `contact.html`
-
-Create a form with the following inputs and validation rules.  
-
--   `Name` - required
--   `Subject` - must have a value with a minimum length of 10
--   `Email` - must have a value and be formatted like an email address
--   `Address` - must have a value with a minimum length of 25
-
-When the form on this page is submitted, write code to validate the input. If any of the inputs fail validation display an error message for the relevant input.
-
----
-
-## Level 2
-
-### `contact.html`
-
-If all validation passes, add a message above the form indicating the form passed validation.
+When a logged in user navigates to the favourites page, the favourites array should be retrieved from the API rather than localStorage.
 
 ## Rules
 
--   Sharing APIs and copying and sharing of any code will result in your assignment being given a mark of zero.
--   You may only use plain JavaScript for this assignment, no libraries or frameworks. You will be given a mark of zero if you use a library or framework for your JavaScript code.
+-   Copying and sharing of any code will result in your assignment being given a mark of zero.
+-   You may only use plain JavaScript for this assignment, no JavaScript libraries or frameworks. You may use CSS libraries like Bootstrap.
 
 ## Submission
 
-- Create a folder called `your-name-js1-ca`, e.g. `mary-smith-js1-ca`
-- Add all your code to this folder, zip the folder and submit the zip file
+-   Create a folder called your-name-js2-ca, e.g. mary-smith-js2-ca
+-   Add all your frontend code to this folder and add your Strapi folder if you created one
+-   Remember to exclude the node_modules folder from your submission
+-   Zip the folder and submit the zip file
+
+## Time
+
+40 hours
