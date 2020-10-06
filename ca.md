@@ -8,13 +8,17 @@ It doesn’t matter what kind of data this API serves, but if you create a conte
 
 For instance, if you create a `Team` content type, each team might have a `name`, `nickname` and `yearEstablished` property.
 
-You can also build your own API in any other technology as long as it is publicly hosted.
+Submit your Strapi folder with your other code when delivering the project.
 
-Choosing appropriate variable and function names will form part of your assessment, as will proper and consistent formatting of your code.
+You can also build your own API in any other technology as long as it is publicly hosted. (The API only needs to be publicly hosted if you use a different framework or platform than Strapi).
 
 Level 1 is required.
 
-Level 2 and Level 3 are optional.
+Level 2 and Level 3 are optional. If you attempt these levels please add a `README.md` file to your project that includes an admin username/email address and password that the markers can use to log in to your API.
+
+---
+
+Choosing appropriate variable and function names will form part of your assessment, as will proper and consistent formatting of your code.
 
 ## Level 1 Process
 
@@ -55,10 +59,10 @@ When a logged in user navigates to the favourites page, the favourites array sho
 
 ## Submission
 
--   Create a folder called your-name-js2-ca, e.g. mary-smith-js2-ca
--   Add all your frontend code to this folder and add your Strapi folder if you created one
--   Remember to exclude the node_modules folder from your submission
--   Zip the folder and submit the zip file
+-   Create a folder called your-name-js2-ca, e.g. mary-smith-js2-ca.
+-   Add all your frontend code to this folder and add your Strapi folder if you used Strapi. If you attempted Level 2 or 3, remember to add a `README.md` file that includes an admin username/email address and password for the API project.
+-   Remember to exclude the node_modules folder from your Strapi project before delivering.
+-   Zip the folder and submit the zip file.
 
 ## Time
 
