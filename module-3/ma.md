@@ -2,31 +2,15 @@
 
 ## Brief
 
-You will need to create a local Strapi instance for this assignment.
-
-The focus is on the JavaScript code in this assignment, but as a frontend developer the user interfaces you develop should always be presentable and make sense.
-
-You can use any UI library like Bootstrap for the assignment or use simple CSS styles.
-
-Use modules where appropriate.
+The instructions for the MA can be found in <a href="https://github.com/NoroffFEU/js2-ma3" target="_blank">this repo</a>.
 
 ## Level 1
 
-Create a login form that accepts a username and password.
-
-When the form is submitted, add simple validation that checks that there is at least a value in each input.
-
-If validation passes, make a request to your local Strapi API to login.
-
-If the login is successful, store the returned JWT in localStorage and redirect to another page. It doesn't matter which page you redirect to.
-
-If the login is not successful, display a message indicating that to the user.
+Follow the instructions in the repo.
 
 ---
 
 ## Submission
-
-Submit only the frontend files. Don't submit your Strapi files.
 
 -   Create a folder called `your-name-js2-ma3`, e.g. `mary-smith-js2-ma3`
 -   Add all your code to this folder, zip the folder and submit the zip file
